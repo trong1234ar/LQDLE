@@ -23,7 +23,7 @@ def main():
     # session state
     ss = st.session_state
     main_df = pd.read_excel('AOVChamp.xlsx', sheet_name='Info')
-    main_df = main_df.sort_values(by=['role', 'champ', 'release_year'])
+    main_df = main_df.sort_values(by=['champ', 'release_year'])
     image_df = pd.read_excel('AOVChamp.xlsx', sheet_name='Image')
 
     with main_col:
