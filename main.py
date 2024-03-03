@@ -9,7 +9,6 @@ from config import *
 def main():
     background()
     
-    main_df = pd.read_excel('AOVchamp.xlsx')
 
     # import css
     st.markdown(css_text_subheader, unsafe_allow_html=True)
@@ -23,9 +22,9 @@ def main():
 
     # session state
     ss = st.session_state
-    main_df = pd.read_excel('AOVchamp.xlsx', sheet_name='Info')
+    main_df = pd.read_excel('AOVChamp.xlsx', sheet_name='Info')
     main_df = main_df.sort_values(by=['role', 'champ', 'release_year'])
-    image_df = pd.read_excel('AOVchamp.xlsx', sheet_name='Image')
+    image_df = pd.read_excel('AOVChamp.xlsx', sheet_name='Image')
 
     with main_col:
         st.markdown(f"<div class='header'>{app_name}</div>", unsafe_allow_html=True)
