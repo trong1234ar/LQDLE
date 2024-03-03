@@ -9,7 +9,6 @@ from config import *
 def main():
     background()
     
-    main_df = pd.read_excel('AOVchamp.xlsx')
 
     # import css
     st.markdown(css_text_subheader, unsafe_allow_html=True)
