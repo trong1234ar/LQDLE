@@ -75,7 +75,7 @@ def main():
 
             with info_img_col:
                 info_img_link = image_df[image_df['id'] == selected_champ_df['id'].values[0]]['image'].values[0]
-                st.image(info_img_link, use_column_width=True)
+                st.image(info_img_link, use_container_width=True)
 
             with info_name_col:
                 st.write('')
